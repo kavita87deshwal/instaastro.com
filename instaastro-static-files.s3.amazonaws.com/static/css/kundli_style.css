@@ -1,0 +1,435 @@
+header a.btn {
+    width: 200px;
+    border: 1px solid #929292;
+    color: #929292;
+}
+
+header a.btn.active {
+    background-color: #fd7924 !important;
+    color: white;
+    font-weight: bold;
+}
+
+.table-bordered td,
+.table-bordered th,
+.table-bordered tr {
+    border: none;
+    padding: 8px 15px;
+}
+
+.table-bordered {
+    border-radius: 6px;
+    border: 1px solid #C3C3C3;
+    border-collapse: inherit;
+    border-spacing: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.list-group {
+    height: 350px;
+    overflow-y: auto;
+}
+
+.bg-kundli {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 24px;
+}
+
+/* .table-dasha {
+  max-width: 660px;
+} */
+
+.btn-kundli {
+    background-color: #FD7924;
+    color: white !important;
+}
+
+.btn-kundli:hover {
+    background-color: #e26e21;
+}
+
+#dasha_details tr {
+    cursor: pointer;
+}
+
+.bg-kundli-dark {
+    background-color: #F8F8F8;
+}
+
+.kundli-card .card-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #FEC83E;
+}
+
+.kundli-card {
+    border-color: #FEC83E;
+}
+
+.avatar-circle {
+    height: 50px;
+    width: 50px;
+    padding-top: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.planet-image {
+    width: 64px;
+    height: 64px;
+}
+
+.fa.fa-trash {
+    color: #F44B4B;
+}
+
+/******************Kundli Css Start******************************/
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F8F8;
+    border-radius: 6px;
+}
+
+.free-kundli-result-section h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    margin-top: 16px;
+}
+
+.top-bottom-border {
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 7px 0px;
+    overflow: auto;
+}
+
+header .kundli-tab-button a,
+.kundli-box-design .report-button a {
+    border: 1px solid #C3C3C3 !important;
+    border-radius: 6px !important;
+    margin: 0 14px;
+    color: #C3C3C3 !important;
+    width: auto !important;
+    text-transform: capitalize;
+    font-weight: 400 !important;
+    font-size: 16px;
+    transition: all linear 0.2s;
+    white-space: nowrap;
+}
+
+header .kundli-tab-button a:hover,
+.kundli-box-design .report-button a:hover {
+    border-color: #FD7E14 !important;
+    color: #FD7E14 !important;
+}
+
+header .kundli-tab-button a.active {
+    color: #FFFFFF !important;
+    border-color: #FD7E14 !important;
+}
+
+.kundli-box-design {
+    box-shadow: 0px 6px 10px #00000029;
+    border-radius: 10px;
+}
+
+.kundli-box-design .kundli-card {
+    border: none;
+}
+
+.kundli-box-design .kundli-card .card-header {
+    border: none;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.kundli-box-design .kundli-card .card-body {
+    padding: 10px 1.25rem 30px;
+}
+
+.kundli-box-design .report-button {
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.kundli-box-design .kundli-card .card-header {
+    padding: 0.65rem 1.25rem;
+}
+
+.kundli-box-design .report-button a.active {
+    border-color: #EF7D14 !important;
+    background-color: #EF7D14 !important;
+    color: #FFFFFF !important;
+}
+
+.dasha-header-tab {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    margin: 18px 0px;
+}
+
+.dasha-header-tab div {
+    position: relative;
+}
+
+.dasha-header-tab div::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #C3C3C3;
+    top: 14px;
+    right: -120px;
+}
+
+.dasha-header-tab div:last-child::after {
+    display: none;
+}
+
+.dasha-header-tab div a {
+    text-decoration: none;
+    color: #212529;
+    cursor: pointer;
+}
+
+.dasha-header-tab div a:hover {
+    color: #212529;
+}
+
+.dasha-header-tab div span {
+    border: 1px solid #C3C3C3;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    place-items: center;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.dasha-header-tab div.active span {
+    border: 1px solid #FD7E14;
+    background-color: #FD7E14;
+    color: #FFFFFF;
+}
+
+.res-table {
+    width: 100%;
+    overflow: auto;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.dasha_row {
+    cursor: pointer;
+}
+
+.empty-white {
+    background-color: #FFFFFF !important;
+}
+
+.white-bg-section {
+    background-color: #FFFFFF;
+}
+
+.death-calculator-form-section.white-bg-section .form-control,
+.death-calculator-form-section.white-bg-section .select-dropdown__button,
+.death-calculator-form-section.white-bg-section .select-dropdown__list-item {
+    background-color: #FFFFFF !important;
+}
+
+.death-calculator-form-section.white-bg-section .select-dropdown__list-item:hover {
+    background-color: #FD7E14 !important;
+}
+
+.bg-image-matchmaking {
+    background-image: url("../img/matchmaking-bg.png");
+    background-repeat: no-repeat;
+    height: 130px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.bg-image-matchmaking p {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bg-image-matchmaking button {
+    height: 45px;
+    background-color: #FFFFFF;
+    color: #212529;
+}
+
+.kundli-users-list {
+    margin-top: 20px;
+    max-height: 380px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-right: 3px;
+}
+
+.user-list {
+    background-color: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    padding: 12px 25px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.kundli-user-name {
+    color: #1E1A17;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.kundli-user-time,
+.kundli-user-location {
+    font-size: 17px;
+    color: #454545;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.kundli-user-delete {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.kundli-error {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.kundli-error-text {
+    margin: 20px 0px;
+    font-size: 20px;
+    color: #1E1A17;
+}
+
+.kundli-error-button {
+    height: 45px;
+}
+
+/* @media screen and (max-width: 1176px) {
+  
+} */
+
+@media screen and (max-width: 786px) {
+    .mob-text-center {
+        text-align: center;
+    }
+    .mob-mt-30 {
+        margin-top: 30px;
+    }
+    .mob-pd-0 {
+        padding: 0;
+    }
+    .empty-white {
+        display: none;
+    }
+    .mob-bg-image-matchmaking {
+        background-image: url("../img/mobile-matchmaking-bg.png");
+    }
+    .bg-image-matchmaking p {
+        font-size: 20px;
+    }
+    .bg-image-matchmaking {
+        background-image: unset;
+    }
+    .table-bordered {
+        border: 1px solid #C3C3C3 !important;
+    }
+    .report-button a.btn {
+        margin: 5px !important;
+        padding: 6px 14px;
+    }
+    .kundli-box-design {
+        margin: 0px;
+        box-shadow: none;
+    }
+    .kundli-card .card-header {
+        font-size: 18px;
+    }
+    .kundli-box-design .kundli-card .card-header {
+        padding: 0.55rem 1.25rem;
+    }
+    .kundli-box-design .report-button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .dasha-header-tab div::after {
+        display: none;
+    }
+    .dasha-header-tab {
+        display: inline-block;
+        width: 100%;
+        margin: 0px 0px 18px;
+    }
+    .dasha-header-tab div {
+        display: inline-flex;
+        justify-content: flex-start;
+        margin: 3px 0px;
+        place-items: center;
+        width: 49%;
+        white-space: nowrap;
+    }
+    .mob-pl-0 {
+        padding-left: 0px;
+    }
+    .mob-pr-0 {
+        padding-right: 0px;
+    }
+    .fit-content {
+        max-width: fit-content;
+    }
+    .death-calculator-form-section.white-bg-section .border-right {
+        border: none !important;
+    }
+    .left-matchmaking {
+        background-color: #F0F8FD;
+        border-radius: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0px 15px 5px 15px;
+    }
+    .right-matchmaking {
+        background-color: #FFF7FC;
+        border-radius: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 5px 15px 0px 15px;
+    }
+    .kundli-users-list {
+        max-height: 480px;
+    }
+    .user-list {
+        margin-bottom: 10px;
+    }
+}
+
+/******************Kundli Css End******************************/

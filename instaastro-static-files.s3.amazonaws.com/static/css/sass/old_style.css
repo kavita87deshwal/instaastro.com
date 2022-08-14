@@ -1,0 +1,160 @@
+.modal button.close {
+    position: absolute;
+    top: -2px;
+    right: 7px;
+    z-index: 99;
+    font-size: 35px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.login-form .form-group,
+.signup-form .form-group {
+    position: relative;
+    margin-bottom: 0.7rem;
+}
+
+.login-form i.showPwd,
+.signup-form i.showPwd {
+    right: 3px;
+    cursor: pointer;
+}
+
+.login-form .form-group i,
+.signup-form .form-group i {
+    position: absolute;
+    top: 8px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="tel"],
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="tel"] {
+    border: none;
+    border-bottom: 1px solid #505050;
+    border-radius: 0;
+    font-size: 0.9rem;
+    padding-left: 1.65rem;
+}
+
+.form-wrap.popup-form {
+    padding-top: 45px;
+}
+
+.popup-form div#nav-tabContent {
+    margin-top: 30px;
+}
+
+.auth-line {
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.login-form,
+.signup-form,
+.otp-screen {
+    padding: 0 65px 60px;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #FD9C0F
+}
+
+.login-form .forget-pass {
+    color: #fd6d0c;
+}
+
+.login-form button,
+.signup-form button,
+.otp-screen button {
+    font-weight: 600
+}
+
+.popup-form .form-divider {
+    margin-top: 20px;
+}
+
+.popup-form .form-divider span {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-form .form-divider span::before,
+.popup-form .form-divider span::after {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+.popup-form .form-divider span::after {
+    left: auto;
+    right: 0;
+}
+
+.login-bg {
+    background-image: url('../../img/login-popup-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.popup-form div#nav-tab {
+    padding: 0 65px;
+    border-bottom: none;
+}
+
+.popup-form a.form-link {
+    padding: 8px 10px;
+    color: #505050;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.popup-form a:hover {
+    text-decoration: none;
+}
+
+.popup-form a.active {
+    background-color: #ff7000;
+    color: #fff;
+}
+
+.popup-heading {
+    font-size: 1.5rem;
+}
+
+.otp-screen .phone-icon i {
+    font-size: 50px;
+    border-radius: 100%;
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: #F7F7F7;
+}
+
+@media (min-width: 576px) {
+    #birthdetailModal .modal-dialog {
+        max-width: 400px !important;
+    }
+    #askQuestionModal .modal-dialog {
+        max-width: 400px !important;
+    }
+}
+
+.iti {
+    display: block !important;
+}

@@ -1,0 +1,1264 @@
+@import "./variables";
+@import "./breakpoints";
+
+// small desktop < 1200
+@include media("<=desktopSmall") {
+  .steps-wrapper {
+    .steps {
+      &::after {
+        top: 33%;
+        right: -20px;
+      }
+      .step-icon {
+        width: 100px;
+      }
+    }
+  }
+  .container-masonry {
+    column-count: 3;
+  }
+  // .tarot-image-section {
+  //     .tarot-card {
+  //         width: 18%;
+  //     }
+  // }
+  // .tool-image-section{
+  //     .tool-card{
+  //         width: 17.5%;
+  //         height: 175px;
+  //         .tool-image{
+  //             padding: 10px;
+  //        }
+  //     }
+  // }
+}
+// media query <=992px
+@include media("<=tablet") {
+  .d-display-none {
+    display: none;
+  }
+  .dark-background-menu {
+    content: "";
+    width: 144%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #mainNav {
+    #navbarResponsive {
+      position: fixed;
+      z-index: 999;
+      width: 70%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      overflow-y: auto;
+      &:before {
+        // content: '';
+        // background-color: $clrDarkGray;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.8;
+      }
+      button {
+        position: absolute;
+        z-index: 99;
+        left: 300px;
+      }
+      &.show {
+        .navbar-nav {
+          margin-left: 0px !important;
+        }
+      }
+      .navbar-nav {
+        background-image: url(../../img/instaastro-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 155px;
+        background-position: 20px 20px;
+        background-color: #fff;
+        max-width: 350px;
+        // height: 100%;
+        min-height: 100%;
+        margin-left: -350px !important;
+        padding: 80px 0;
+        position: relative;
+        transition: 0.4s all;
+        .nav-item {
+          padding: 0 20px;
+          &.active {
+            border-left: 3px solid $clrOrange;
+          }
+        }
+      }
+    }
+  }
+  .pointers {
+    .pointer-item {
+      &:nth-child(2) {
+        border: none;
+        border-top: 1px solid #606366;
+        border-bottom: 1px solid #606366;
+        margin: 20px 0;
+        padding: 20px 0;
+      }
+    }
+  }
+  .in-news {
+    .news-wrapper {
+      .new-item {
+        width: 25%;
+      }
+    }
+  }
+  .horoscopes {
+    .hotoscope-box {
+      flex: 1 1 20%;
+    }
+  }
+  .icon-box {
+    margin-bottom: 60px;
+  }
+  .hero-pointer {
+    .pointer-item {
+      &:nth-child(2) {
+        border: none;
+        border-left: 2px solid #606366;
+        border-right: 2px solid #606366;
+        padding: 0 15px;
+        margin: auto;
+      }
+      .pointer-wrapper {
+        .number {
+          font-size: 30px;
+          line-height: 40px;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .tarot-image-section {
+    .tarot-card {
+      width: 22%;
+    }
+  }
+  // .tools-section{
+  //     margin: 0 1rem;
+  // }
+  // .tool-image-section{
+  //     .tool-card{
+  //         width: 21.5%;
+  //         height: 152px;
+  //         .tool-image{
+  //             padding: 10px;
+  //        }
+  //        .tool-name {
+  //             font-size: 14px;
+  //             line-height: 18px;
+  //         }
+  //     }
+  // }
+
+  .custom-page {
+    span.highlighter {
+      right: unset;
+      left: 49px;
+    }
+
+    .navbar-nav ul.dropdown-menu.show li {
+      padding: 0.5rem 1rem;
+    }
+
+    .large_menu {
+      width: 100% !important;
+      padding: 0px !important;
+      background: #ffffff;
+      border: none;
+      box-shadow: unset;
+      border-radius: unset;
+      top: unset;
+    }
+    .large_menu li {
+      width: 100% !important;
+      float: unset;
+      margin-right: 0px !important;
+      border-bottom: none !important;
+      padding: unset;
+      a {
+        padding-left: 0px !important;
+      }
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .consultaion-details,
+  .astrology-buttons {
+    width: 100%;
+  }
+
+  .section-padding-top-0 {
+    padding-top: 0 !important;
+  }
+
+  .mob-astro-details {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+
+    .astrologer-image {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      height: 100px;
+      outline: 2px solid rgba(18, 206, 41, 0.4);
+      border: 2px solid #ffffff;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .astro-left-details {
+      text-align: center;
+      .astrology-rating {
+        margin-left: 0;
+      }
+    }
+    .mob-astro-details-content {
+      padding-left: 15px;
+      h1 {
+        line-height: 20px;
+      }
+      p {
+        margin-bottom: 2px;
+      }
+      .astrologer-follow-btn {
+        margin-top: 16px;
+      }
+    }
+  }
+  .astro-skills {
+    span {
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      padding: 3px 12px;
+      margin: 0 8px 10px 0;
+      display: inline-block;
+    }
+  }
+  .btn-getApp {
+    display: block;
+  }
+  .astrology-buttons {
+    width: 100%;
+    position: fixed;
+    bottom: -1px;
+    left: 0px;
+    z-index: 999999;
+    background-color: #ffffff;
+    margin: 0 !important;
+    padding: 10px 12px;
+    border: none;
+    box-shadow: 0px -2px 6px #00000012;
+  }
+  .lagna_prediction {
+    table {
+      width: 100%;
+    }
+  }
+  .rahukaal-details {
+    max-width: 100%;
+    margin-bottom: 15px !important;
+  }
+}
+// media query < 768px
+@include media("<tabletStart") {
+  .custom-page {
+    .navbar {
+      padding: 0;
+    }
+  }
+
+  .tools-section {
+    padding: 50px 15px !important;
+  }
+
+  .dark-background-menu {
+    content: "";
+    width: 144%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #hero_slider {
+    .inner-icons {
+      position: absolute;
+      top: 70%;
+      left: 5%;
+      a {
+        img {
+          width: 75px !important;
+        }
+      }
+    }
+  }
+  .hero-section {
+    background-position: center center;
+    background-size: cover;
+    &.aarti-hero {
+      background-image: url("../../img/banners/aarti-mobile-banner.jpg");
+    }
+    &.babyname-hero {
+      background-image: url("../../img/banners/babyname-mobile-banner.jpg");
+    }
+    &.whatsapp-hero {
+      background-image: url("../../img/banners/wallpaper-mobile-banner.png");
+    }
+    &.death-calculator {
+      background-image: url("../../img/banners/death-calculator-mobile-banner.png");
+    }
+    &.friendship-calculator {
+      background-image: url("../../img/banners/friendship-calculator-mobile-banner.png");
+    }
+    &.name-compatibility {
+      background-image: url("../../img/banners/name-compatibility-mobile-image.png");
+    }
+    &.destiny-number {
+      background-image: url("../../img/banners/destiny-number-mobile-banner.png");
+    }
+    &.moon-sign-calculator {
+      background-image: url("../../img/banners/moon-sign-mobile-banner.png");
+    }
+    &.love-compatibility {
+      background-image: url("../../img/banners/love-compatibility-mobile-image.png");
+    }
+    &.love-calculator {
+      background-image: url("../../img/banners/love-calculator-mobile-image.png");
+    }
+    &.marriage-calculator {
+      background-image: url("../../img/banners/marriage-calculator-mobile-image.png");
+    }
+    &.career-calculator {
+      background-image: url("../../img/banners/career-calculator-mobile-image.png");
+    }
+    &.sun-sign-calculator {
+      background-image: url("../../img/banners/sun-sign-calculator-mobile-image.png");
+    }
+    &.lucky-color-calculator {
+      background-image: url("../../img/banners/lucky-color-calculator-mobile-image.png");
+    }
+    &.life-number-calculator {
+      background-image: url("../../img/banners/life-number-calculator-mobile-image.png");
+    }
+    &.soul-urge-number-calculator {
+      background-image: url("../../img/banners/soul-urge-number-calculator-mobile-image.png");
+    }
+    &.palm-reading {
+      background-image: url("../../img/banners/palm-reading-mobile-image.png");
+    }
+    &.tarot-reading {
+      background-image: url("../../img/banners/tarot-reading-mobile-image.png");
+    }
+    &.personality-number-calculator {
+      background-image: url("../../img/banners/personality-number-calculator-mobile-image.png");
+    }
+    &.expression-number-calculator {
+      background-image: url("../../img/banners/expression-number-calculator-mobile-image.png");
+    }
+    &.birth-date-compatibility {
+      background-image: url("../../img/banners/birth-date-compatibility-mobile-image.png");
+    }
+    &.minor-expression-number-calculator {
+      background-image: url("../../img/banners/minor-expression-number-calculator-mobile-image.png");
+    }
+    &.vastu-shastra {
+      background-image: url("../../img/banners/vastu-shastra-mobile-image.png");
+    }
+    &.nadi-astrology {
+      background-image: url("../../img/banners/nadi-astrology-mobile-image.png");
+    }
+    &.psychic-reading {
+      background-image: url("../../img/banners/psychic-reading-mobile-image.png");
+    }
+    &.hate-calculator {
+      background-image: url("../../img/banners/hate-calculator-mobile-image.png");
+    }
+    &.hero-fix-height {
+      height: 220px;
+    }
+    &.affair-calculator {
+      background-image: url("../../img/banners/affair-calculator-mobile-image.png");
+    }
+    &.divorce-calculator {
+      background-image: url("../../img/banners/divorce-calculator-mobile-image.png");
+    }
+    &.challenge-number-calculator {
+      background-image: url("../../img/banners/challenge-number-calculator-mobile-image.png");
+    }
+    &.period-cycle-calculator {
+      background-image: url("../../img/banners/period-cycle-calculator-mobile-image.png");
+    }
+    &.inner-dream-number-calculator {
+      background-image: url("../../img/banners/inner-dream-number-calculator-mobile-image.png");
+    }
+    &.lucky-number-calculator {
+      background-image: url("../../img/banners/lucky-number-calculator-mobile-image.png");
+    }
+    &.secret-crush-calculator {
+      background-image: url("../../img/banners/secret-crush-calculator-mobile-image.png");
+    }
+    &.breakup-calculator {
+      background-image: url("../../img/banners/breakup-calculator-mobile-image.png");
+    }
+    &.husband-calculator {
+      background-image: url("../../img/banners/husband-calculator-mobile-image.png");
+    }
+    &.wife-calculator {
+      background-image: url("../../img/banners/wife-calculator-mobile-image.png");
+    }
+    &.attitude-number-calculator {
+      background-image: url("../../img/banners/attitude-number-calculator-mobile-image.png");
+    }
+    &.karmic-debt-number-calculator {
+      background-image: url("../../img/banners/karmic-debt-number-calculator-mobile-image.png");
+    }
+  }
+
+  .page-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  h3 {
+    margin-bottom: 0.3rem;
+  }
+  .custom-page h1,
+  .custom-page h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .section-padding {
+    padding: 50px 0;
+  }
+  .section-padding-40 {
+    padding: 30px 0;
+  }
+  .section-padding-bottom {
+    padding-bottom: 0;
+  }
+  section {
+    &.search-section {
+      padding-bottom: 0;
+    }
+  }
+  .btn {
+    &.btn-border-only {
+      padding: 7px 9px;
+    }
+  }
+  #page-content {
+    .home-astrologers {
+      & > div {
+        flex: 1 1 100%;
+      }
+    }
+    .astro-card {
+      .astro-detail {
+        .astro-lang {
+          font-size: 12px;
+        }
+        .astro-type {
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+      &.busy {
+        .astro-availability {
+          .wait-time {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .category-section {
+    background-color: $clrLightGray1;
+    padding: 12px;
+  }
+  ul {
+    &.aarti-cat {
+      flex-wrap: nowrap;
+      justify-content: left;
+      padding-left: 0;
+      column-gap: 10px;
+      overflow: hidden;
+      li {
+        a {
+          font-size: 14px;
+          line-height: 18px;
+          padding: 8px 20px;
+          &.active {
+            background: $whiteClr;
+          }
+        }
+      }
+      .owl-stage-outer {
+        margin-left: -50px;
+      }
+    }
+    &.alphabets {
+      justify-content: center;
+      column-gap: 9px;
+      row-gap: 10px;
+      li {
+        a {
+          width: 42px;
+          height: 42px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .in-news {
+    .news-wrapper {
+      .new-item {
+        width: 45%;
+      }
+    }
+  }
+  #astrologers {
+    .astrologers-wrapper {
+      .astro-small-card {
+        flex: 1 1 40%;
+        margin: 1px;
+      }
+    }
+    .owl-nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  section {
+    &.features {
+      .col-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+  .horoscopes {
+    .hotoscope-box {
+      flex: 1 1 45%;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .owl-stage-outer {
+      margin-left: -50px;
+    }
+  }
+  .article-carousel {
+    .owl-stage-outer {
+      margin-left: -50px;
+    }
+  }
+  .image-title-box {
+    .box-title {
+      font-size: 18px;
+    }
+  }
+  .promise-box {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+  .steps-wrapper {
+    flex-wrap: wrap;
+    .steps {
+      flex: 1 1 100%;
+      margin-bottom: 50px;
+      &::after {
+        top: auto;
+        right: auto;
+        bottom: -30px;
+        left: 46%;
+        transform: rotate(90deg);
+      }
+      p {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .step-inner {
+        margin: 0 auto;
+      }
+      .step-icon {
+        width: 100px;
+        height: 80px;
+      }
+    }
+  }
+  .gray-list {
+    padding: 0;
+    li {
+      flex: 1 1 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  .icon-box {
+    min-height: auto;
+    .icon {
+      left: 40%;
+    }
+  }
+  .hero-pointer {
+    max-width: 320px;
+    margin: -40px auto 0;
+    position: relative;
+    background-color: $clrPrimary;
+    z-index: 999;
+    border-radius: 6px;
+    .pointers {
+      .pointer-item {
+        &:nth-child(2) {
+          border: none;
+          border-top: 1px solid #606366;
+          border-bottom: 1px solid #606366;
+        }
+        .pointer-wrapper {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+  .what-we-do {
+    .overlap-img {
+      position: relative;
+    }
+  }
+  .gender-section {
+    .gender-option {
+      height: 120px;
+      .gender {
+        img {
+          width: 50px;
+          margin-bottom: 9px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .name-table {
+    .tbl-head {
+      display: none;
+    }
+    .tbl-row {
+      display: block;
+      border: none;
+      margin-bottom: 8px;
+      & > div {
+        width: 100%;
+        padding: 8px 14px;
+        border-right: 1px solid $clrMediumGray2;
+        border-top: 1px solid $clrMediumGray2;
+        border-left: 1px solid $clrMediumGray2;
+        &:nth-child(2) {
+          width: 100%;
+        }
+        &:last-child {
+          border-right: 1px solid $clrMediumGray2;
+          border-bottom: 1px solid $clrMediumGray2;
+        }
+      }
+    }
+  }
+  footer {
+    .footer-apps {
+      text-align: left;
+    }
+  }
+  .death-calculator-section {
+    padding-top: 0 !important;
+  }
+  .tab {
+    width: 100%;
+    justify-content: center;
+    .tablinks {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      margin: 5px;
+    }
+  }
+  .mob-dsp-none {
+    display: none;
+  }
+  .death-calculator-form-section,
+  #deathCalculateModal .modalContent {
+    p {
+      width: 100%;
+    }
+    label {
+      margin-bottom: 4px !important;
+      font-size: 14px;
+    }
+  }
+  .death-calculator-form-section .calculator-form button.btn,
+  #calculatorModal .modalContent button.btn {
+    width: 98%;
+  }
+  #calculatorModal .modalContent p {
+    width: 100%;
+  }
+  #calculatorModal {
+    .modal-body {
+      padding: 0.5rem;
+    }
+    .modalContent {
+      // max-height: 75vh;
+      // max-height: auto;
+      text-align: center;
+      // max-height: calc(100vh - 125px);
+      // overflow-y: scroll;
+      height: 100vh;
+      overflow-y: auto;
+      padding-bottom: 150px;
+      // position: absolute;
+      // top: 10px;
+      left: 0.5rem;
+      right: 0.5rem;
+      p {
+        line-height: 27px;
+      }
+    }
+    .modal-footer {
+      padding: 0.75rem;
+      .btn {
+        width: 100%;
+      }
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0px -1px 6px #0000001a;
+    }
+    .modal-dialog {
+      padding: 0;
+      margin: 0;
+      max-width: 100vw;
+      .modal-content {
+        border-radius: 0px;
+        border: none;
+        height: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+  span.error-message {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 3px;
+  }
+  .palm-reading {
+    ul {
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding: 0px 6px;
+    }
+  }
+  .mt-025 {
+    margin-top: 24px;
+  }
+  table.full-width-table {
+    thead {
+      th {
+        font-weight: 600;
+        padding: 10px;
+      }
+    }
+    tbody {
+      td {
+        padding: 10px;
+      }
+    }
+  }
+  .tarot-image-section {
+    .tarot-card {
+      width: 29%;
+    }
+  }
+
+  // .tool-image-section{
+  //     .tool-card{
+  //         width: 28.8%;
+  //         height: 145px;
+  //         .tool-name {
+  //             font-size: 14px;
+  //             line-height: 18px;
+  //         }
+  //         .tool-image{
+  //             padding: 10px;
+  //        }
+  //     }
+  // }
+
+  .psychic-reading {
+    margin-top: 10px;
+  }
+  .psychic-reading-heading {
+    margin: 10px 0px;
+    font-size: 18px;
+  }
+
+  .d-display-none {
+    display: none;
+  }
+  .btn-getApp {
+    display: block;
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    .btn-getApp {
+      background-color: #212529;
+      color: #ffffff;
+      padding: 0px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+
+  .custom-page {
+    nav#mainNav {
+      background: #ffffff;
+      height: auto;
+      padding-left: 0;
+      .navbar-toggler {
+        background-color: transparent;
+        position: fixed;
+        top: 15px;
+        left: 0;
+        img {
+          width: 18px;
+        }
+      }
+    }
+    .mobile-navigation {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+    }
+    .top-header {
+      height: auto;
+      .mob-border-light {
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+      }
+    }
+    a.navbar-brand.js-scroll-trigger {
+      margin: 15px 0px;
+      margin-left: 30px;
+    }
+    .container.top-navigation .top-header-buttons {
+      text-align: center;
+      margin-top: 0px;
+      white-space: no-wrap;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      a {
+        padding: 7px 22px;
+        margin: 6px 12px;
+        font-size: 16px;
+        border: 1px solid #fd7e14;
+        background-color: #fd7e14;
+        color: #ffffff;
+        height: 40px;
+        // width: 100%;
+        img {
+          filter: brightness(0%) invert(100%);
+        }
+      }
+    }
+
+    .view-all a {
+      width: 100%;
+    }
+
+    .navbar-nav {
+      ul.dropdown-menu.show {
+        border: none;
+        padding: 0;
+
+        li {
+          padding: 0.5rem 1rem;
+        }
+      }
+      a {
+        color: #212529 !important;
+      }
+    }
+
+    .mob-center {
+      text-align: center;
+    }
+
+    .mob-pd-30 {
+      padding: 0 30px;
+    }
+    .astro-card-new {
+      min-height: 490px;
+      .astro-detail {
+        .astro-image-new {
+          width: 145px !important;
+          height: 145px !important;
+          margin-bottom: 17px !important;
+          margin-top: 45px !important;
+        }
+        .astro-type {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+        .astro-availability {
+          width: 100%;
+          .btn.btn-theme {
+            width: 92%;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  #appDownloadModal .modalContent p {
+    width: 100%;
+  }
+
+  .mob-p-0 {
+    padding: 0;
+  }
+  .sticker-section {
+    height: auto;
+    flex-direction: column;
+    .col-md-5 {
+      width: 100%;
+      img {
+        height: auto;
+        object-fit: cover;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+      }
+    }
+    .col-md-7.sticker-content {
+      width: 100%;
+      place-items: center;
+      padding: 20px 0px;
+    }
+  }
+  .navbar-brand {
+    img {
+      width: 150px;
+    }
+  }
+
+  .bg-drop-resume {
+    padding: 0px 10px;
+    height: 170px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    .drop-resume-details {
+      margin-bottom: 15px;
+      .drop-resume-title {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .view-job-section {
+    padding-top: 0px;
+    .view-job-form {
+      padding: 40px 25px;
+    }
+  }
+
+  #career_carousels {
+    .owl-dots {
+      display: none;
+    }
+  }
+
+  .job-title {
+    font-size: 20px !important;
+  }
+  .job-sub-title {
+    font-size: 18px !important;
+  }
+
+  /**********panchang CSS Start *************/
+  .panchang-top-filter {
+    display: block;
+    .panchang-date-btn {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 48%;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        span {
+          display: none;
+        }
+      }
+    }
+    .panchang-search-btn {
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+      &::after {
+        top: 23px;
+        right: 21px;
+      }
+    }
+  }
+  /**********panchang CSS End*************/
+  ul.content-list-50 {
+    li {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  .choghadiya_banner_section {
+    background-image: url("../../img/background-choghadiya-mobile.png");
+    .choghadiya_title {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+    .choghadiya_title.big {
+      font-size: 26px;
+    }
+  }
+  .mob-mb-1 {
+    margin-bottom: 0.5rem;
+  }
+  .choghadiya_sunrise_content {
+    width: 100%;
+  }
+  .choghadiya_sunset {
+    margin-top: 14px;
+  }
+  .color-description {
+    margin-bottom: 25px;
+  }
+  .date-padding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mob-mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+// media query < 475px
+@include media("<=phoneWide") {
+  span.error-message {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 3px;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 37px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .pagination {
+    li {
+      a {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+      }
+    }
+  }
+  .modal {
+    &.signupPopup {
+      .otp-field {
+        input[type="tel"] {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+
+  .breadcrumb {
+    margin-bottom: 0px;
+  }
+  .death-calculator-section {
+    padding-top: 0px;
+  }
+  .mob-dsp-none {
+    display: none;
+  }
+  .death-calculator-form-section,
+  #deathCalculateModal .modalContent {
+    p {
+      width: 100%;
+    }
+    label {
+      margin-bottom: 4px !important;
+      font-size: 14px;
+    }
+  }
+  .container-masonry {
+    column-count: 2;
+    .common-buttons {
+      width: 30px;
+      height: 30px;
+      padding: 8px;
+    }
+  }
+  .light {
+    font-size: 22px;
+  }
+  .tab {
+    width: 100%;
+    justify-content: center;
+    .tablinks {
+      width: 45px;
+      height: 45px;
+      font-size: 22px;
+      margin: 5px;
+    }
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .death-calculator-form-section .calculator-form button.btn,
+  #calculatorModal .modalContent button.btn {
+    width: 98%;
+  }
+  #calculatorModal {
+    .modal-body {
+      padding: 0.5rem;
+    }
+    .modalContent {
+      height: 100vh;
+      overflow-y: auto;
+      left: 0.5rem;
+      right: 0.5rem;
+      padding-bottom: 150px;
+      p.light-text {
+        width: 100%;
+        line-height: 21px;
+      }
+    }
+    .light-background .sub-content ul li {
+      font-size: 14px;
+    }
+    .modal-footer {
+      padding: 0.75rem;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0px -1px 6px #0000001a;
+      .btn {
+        width: 100%;
+      }
+    }
+    .modal-dialog {
+      padding: 0;
+      margin: 0;
+      max-width: 100vw;
+      .modal-content {
+        border-radius: 0px;
+        border: none;
+        height: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .custom-page {
+    .container.top-navigation .top-header-buttons {
+      a {
+        margin: 6px 3px;
+        font-size: 16px;
+        height: 40px;
+      }
+    }
+  }
+  .choghadiya_banner_section {
+    .choghadiya_title {
+      font-size: 16px;
+    }
+    .choghadiya_title.big {
+      font-size: 24px;
+    }
+    .choghadiya_content {
+      font-size: 14px;
+    }
+  }
+  .choghadiya-top-date-filter .choghadiya-date-btn button.btn {
+    height: 38px;
+    padding: 6px 13px;
+  }
+}
+
+// media query < 360px
+@include media("<=phone") {
+  .choghadiya-top-date-filter .choghadiya-date-btn button.btn {
+    padding: 6px 13px;
+    font-size: 15px;
+    margin: 0px;
+  }
+  .color-description {
+    .color_code {
+      margin-left: 38px;
+    }
+  }
+}
